@@ -76,3 +76,14 @@ function keyPressed() {
         thrown = false;
     }
 }
+
+function touchStarted() {
+    if(!thrown) {
+        thrown = true;
+    } else {
+        pos.x = 200;
+        pos.y = 960;
+        thrown = false;
+    }
+    return false;
+}
